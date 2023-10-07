@@ -1,6 +1,6 @@
 {
   "name": "bumpp-version",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "sideEffects": false,
   "main": "src/index.js",
@@ -21,7 +21,9 @@
   },
   "dependencies": {
     "cross-spawn": "^7.0.3",
-    "enquirer": "^2.4.1"
+    "enquirer": "^2.4.1",
+    "picocolors": "^1.0.0",
+    "semver": "^7.5.4"
   },
   "git-hooks": {
     "pre-commit": "npm run lint",
