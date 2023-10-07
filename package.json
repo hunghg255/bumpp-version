@@ -1,0 +1,39 @@
+{
+  "name": "bumpp-version",
+  "version": "1.0.0",
+  "license": "MIT",
+  "sideEffects": false,
+  "main": "src/index.js",
+  "bin": {
+    "bumpp-version": "./bin/cli.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "LICENSE"
+  ],
+  "author": "hunghg255",
+  "devDependencies": {
+    "@types/cross-spawn": "^6.0.3",
+    "git-scm-hooks": "^0.0.7",
+    "prettier": "^3.0.3",
+    "verify-commit-msg": "^0.0.10"
+  },
+  "dependencies": {
+    "cross-spawn": "^7.0.3",
+    "enquirer": "^2.4.1"
+  },
+  "git-hooks": {
+    "pre-commit": "npm run lint",
+    "commit-msg": "npm run verify-commit"
+  },
+  "keywords": [],
+  "homepage": "https://github.com/hunghg255/bumpp-version",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hunghg255/bumpp-version"
+  },
+  "bugs": {
+    "url": "https://github.com/hunghg255/bumpp-version/issues"
+  }
+}
